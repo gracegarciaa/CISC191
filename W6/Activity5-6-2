@@ -1,0 +1,24 @@
+#Code
+##Super Class
+```
+public class Course
+{
+    private String courseNum;
+    private String courseTitle;
+    public void setCourseNum(String courseNum)
+    {
+        this.courseNum = courseNum;
+    }
+    public void setCourseTitle(String courseTitle)
+    {
+        this.courseTitle = courseTitle;
+    }
+    public void printInfo()
+    {
+        System.out.println("Course Information: ");
+        System.out.println("Course Number: " + courseNum);
+        System.out.println("Course Title: " + courseTitle);
+    }
+}
+
+```
