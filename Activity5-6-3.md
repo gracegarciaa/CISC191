@@ -1,4 +1,5 @@
-# My Code
+# Activity 5-6.3: Inheritance
+## My Code
 ```
 public class Book
 {
@@ -82,4 +83,5 @@ public class Main {
 }
 ```
 ## Flowchart:
+![alt text](image.jpg)
 
