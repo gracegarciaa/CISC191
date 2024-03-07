@@ -33,5 +33,53 @@ public class Book
     }
 }
 ```
+```
+public class Encyclopedia extends Book
+{
+    private String edition;
+    private int pages;
+    public void setEdition(String edition)
+    {
+        this.edition = edition;
+    }
+    public void setPages(int pages)
+    {
+        this.pages = pages;
+    }
+    @Override
+    public void printInfo()
+    {
+        super.printInfo();
+        System.out.println("Edition: " + edition);
+        System.out.println("Number of Pages: " + pages);
+    }
+}
+```
+```
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args)
+    {
+        Book b1 = new Book();
+        Encyclopedia b2 = new Encyclopedia();
+
+        b1.setTitle("The Hobbit");
+        b1.setAuthor("J. R. R. Tolkien");
+        b1.setPublisher("George Allen & Unwin");
+        b1.setPubDate("21 September 1937");
+        b2.setTitle("The Illustrated Encyclopedia of the Universe");
+        b2.setAuthor("Ian Ridpath");
+        b2.setPublisher("Watson-Guptill");
+        b2.setPubDate("2001");
+        b2.setEdition("2nd");
+        b2.setPages(384);
+
+        b1.printInfo();
+        System.out.println();
+        b2.printInfo();
+    }
+}
+```
 ## Heading2
 __Boldface__
