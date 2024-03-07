@@ -1,6 +1,7 @@
 # Activity 5-6.3: Inheritance
 ## My Code
-```
+```![Activity 5-6 3 Flowchart](https://github.com/gracegarciaa/CISC191/assets/159951911/446456a9-d833-4944-b12c-d4b41e32bad8)
+
 public class Book
 {
     private String title;
