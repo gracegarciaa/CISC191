@@ -86,3 +86,6 @@ public class Main {
 ## Flowchart:
 ![alt text](image.jpg)
 
+## Challenges:
+Overall, I like how inheritance can make your code a lot more efficient. It is not particularly difficult right now, but I know that this is a very simplified version of it. I think this activity was very doable. My only issue was forgetting to type “extends” when writing the child class. Iw rote all of the code and was getting a lot of errors but I soon figured out the reason.
+
