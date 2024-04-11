@@ -137,4 +137,4 @@ public class SalaryCalcButtonFrame extends JFrame implements ActionListener {
 ```
 
 ## Challenges:
-I think this lab was a little bit more challenging for me because I am trying to learn about GUIs ahead of class. The most difficult part for me was taking user input and using it to execute my code. However, after rereading the GUI lecture a couple times, I was finally able to figure it out. It's mainly just trial and error for me.
+I think this lab was a little bit more challenging for me because I am trying to learn about GUIs ahead of class. The most difficult part for me was taking user input and using it to execute my code. However, after rereading the GUI lecture a couple times, I was finally able to figure it out. It's mainly just trial and error but it was very helpful to have an example in the lecture.
