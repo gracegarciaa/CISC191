@@ -2,7 +2,12 @@
 
 ## My Code:
 ```
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.sql.*;
 import java.util.Scanner;
@@ -26,7 +31,15 @@ public class SimpleJdbc {
         // Create a statement
         Statement statement = connection.createStatement();
 
-        Scanner reader = new Scanner(new File("~/Desktop/CISC191/Project Database/AutoMPG.txt"));
+        FileInputStream inputData;
+        try {
+            inputData = new FileInputStream("~/Desktop/CISC191/Project Database/AutoMPG.txt");
+        }catch(FileNotFoundException e)
+            {
+                throw new RuntimeException(e);
+            }
+
+        Scanner input = new Scanner(inputData);
         int i = 1;
         float mpg = 0;
         int cylinders = 0;
@@ -38,15 +51,16 @@ public class SimpleJdbc {
         int origin = 0;
         String carName = "";
 
-        while(reader.hasNextLine() == true)
+        while(input.hasNextLine() == true)
         {
             if(i == 1)
             {
-                mpg = reader.nextFloat();
+                mpg = input.nextFloat();
                 i++;
                 System.out.println(mpg);
             }
         }
+
         // Execute a statement
         ResultSet resultSet = statement.executeQuery
                 ("select * from Auto;");
